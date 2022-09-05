@@ -1,0 +1,2 @@
+Audio hanya bisa terdengar ketika di buka dengan Mozilla Firefox.
+Dengan mengubah pengaturan menjadi allow, yang berada disebelah kiri dekat search bar.

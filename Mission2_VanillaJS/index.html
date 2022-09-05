@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>After Midnight</title>
+    <link rel="stylesheet" type="text/css" href="Assest/style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/nazi-typewriter" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/nova" type="text/css"/>
+</head>
+<body>
+    <audio hidden autoplay loop>
+        <source src="Assest/suara burung hantu.mp3" type="audio/mpeg">
+    </audio>
+    <div class="scene">
+        <h2 contenteditable="true">Misteri Merapi</h2>
+        <p>Gunung Merapi adalah salah satu gunung yang bener-benar banyak menyimpan legenda dan cerita mistis.
+           Salah satunya yang paling terkenal adalah keberadaan Pasar Bubrah.
+           Di waktu-waktu tertentu hewan gaib seperti macan putih, ular besar, dan lainnya kerap membuat orang
+           yang mendaki harus lari terpontang-panting. Satu hal yang harus dipahami ketika ke Gunung Merapi:
+           selalu jaga hati, lisan, dan perbuatan.
+        </p>
+        <img src="Assest/images/moon.png" class="moon">
+        <img src="Assest/images/mount.png" class="mount">
+        <img src="Assest/images/forest.png" class="forest">
+        <img src="Assest/images/cloud1.png" class="cloud1">
+        <img src="Assest/images/cloud2.png" class="cloud2">
+        <img src="Assest/images/cloud3.png" class="cloud3">
+        <img src="Assest/images/cloud1.png" class="cloud4">
+        <img src="Assest/images/cloud2.png" class="cloud5">
+        <img src="Assest/images/cloud3.png" class="cloud6">
+    </div>
+    <script type="text/javascript">
+        function stars() {
+            let count = 500;
+            let scene = document.querySelector('.scene');
+            let i = 0;
+            while(i < count){
+                let star = document.createElement("i");
+                let x = Math.floor(Math.random() * window.innerWidth);
+                let y = Math.floor(Math.random() * window.innerHeight);
+                let duration = Math.random() * 10;
+                let size = Math.random() * 2;
+
+                star.style.left = x+'px';
+                star.style.top = y+'px';
+                star.style.width = 1+size+'px';
+                star.style.height = 1+size+'px';
+
+                star.style.animationDuration = 5+duration+'s';
+                star.style.animationDelay = duration+'s';
+
+                scene.appendChild(star);
+                i++
+            } 
+        } 
+        stars();
+    </script>
+</body>
+</html>
